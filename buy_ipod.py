@@ -21,7 +21,7 @@ search_field.send_keys("ipod")
 #driver.get("http://demo.opencart.com/index.php?route=product/search&search=ipod")
 # TASK_4 find 'add to comparison button and click
 #driver.find_element_by_xpath('//button[@data-original-title="Compare this Product"]').click()
-find_compare = driver.find_element_by_xpath("//div[@class='product-thumb.transition']/div/div/div/button[3]")  #NoSuchElementException:
+find_compare = driver.find_element_by_xpath("//div[@class='product-thumb.transition']/div/div/div/button[last()]")  #NoSuchElementException:
 # driver.find_element_by_xpath('//button[@onclick="compare.add*"]')  - NoSuchElementException (class,id, name, etc only)
 # driver.find_element_by_css_selector(".button-group[value='Update']").click()
 # add_to_cp.click()
